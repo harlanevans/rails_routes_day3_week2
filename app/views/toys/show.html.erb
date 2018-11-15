@@ -1,0 +1,5 @@
+<h1> <%= @animal.name %> - <%= @toy.name %></h1>
+<p><%= @topic.description %></p>
+<%= link_to "Edit Toy", edit_animal_toy_path([@animal, @toy]) %>
+<%= link_to "Delete Toy", [@animal, @toy], method: :delete %>
+<%= link_to "Back to Toys", animal_toys_path(@animal) %>

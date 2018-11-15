@@ -1,0 +1,7 @@
+<h1>Click a Toy to Get More Info!</h1>
+<%= link_to 'Create a New Toy', new_animal_toy_path(@animal) %>
+<ul>
+  <% @toys.each do |toy| %>
+    <li><%= link_to toy.name, [@animal, toy] %></li>
+    <% end %>
+</ul>

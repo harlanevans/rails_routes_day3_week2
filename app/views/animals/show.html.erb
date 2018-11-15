@@ -1,2 +1,8 @@
-<h1>Animals#show</h1>
-<p>Find me in app/views/animals/show.html.erb</p>
+<h1> <%= @animal.name %> </h1>
+<hr />
+<p>What would you like to do?></p>
+<%= link_to 'View Animals', animal_toy_path(@animal) %>
+<br />
+<%= link_to 'Edit Animals Info', edit_animal_path(@animal) %>
+<br />
+<%= link_to 'Delete Animal Info', @animal, method: :delete %>
